@@ -50,6 +50,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'letter_opener_web'
+  gem 'dotenv-rails'
 end
 
 group :production do
@@ -63,3 +64,10 @@ gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'twitter-bootstrap-rails'
+
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+
+gem 'rails_admin'
+gem 'cancan'

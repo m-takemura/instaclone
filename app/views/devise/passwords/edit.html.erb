@@ -1,9 +1,9 @@
 <div class="container">
   <div class="wrapper col-md-4 col-md-offset-4 col-sm-10">
-    <h2>Change your password</h2>
+    <h2>パスワード変更</h2>
 
     <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
-      <%= devise_error_messages! %>
+    <%= f.error_messages! %>
       <%= f.hidden_field :reset_password_token %>
 
       <div class="field">
@@ -20,7 +20,7 @@
       </div>
 
       <div class="actions">
-        <%= f.submit "Change my password" %>
+        <%= f.submit "パスワードを変更する" %>
       </div>
     <% end %>
 
